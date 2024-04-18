@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Catch the Falling Object</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    canvas {
+      border: 10px solid #333;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .score {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+    }
+
+    .game-over {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 48px;
+      font-weight: bold;
+      color: #e74c3c;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas" width="800" height="600"></canvas>
+  <div class="score">Score: 0</div>
+  <div class="game-over" style="display: none;">Game Over</div>
+  <script src="game.js"></script>
+</body>
+</html>
